@@ -1,17 +1,78 @@
 <!DOCTYPE html>
+<!--First html page-->
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="cats, form, owners">
+    <meta name="description" content ="The file contains form about cats which should be fulfilled by cats' owners. ">
+    <title>Questionaire</title>
 </head>
-
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
-</body>
+    <h2>Form for cat owners</h2>
+    <p>Please fill the form</p>
+    <form id="firstForm" method="post" action="http://localhost:5500/SimpleForm.html">
+        <input type="hidden" name="securityCode" value="DE79W23">
+        <p>
+            <label for="catName">Your cat name:</label>
+            <input id="catName" name="Cat name" type="text" size="30" maxlength="50">
+        </p>
+        <p>
+            <label for="catBreed">Your cat breed:</label>
+            <input id="catBreed" name="Cat breed" type="text" size="30" maxlength="50">
+        </p>
+        <p>
+            <label for="catPlace">Your cat favourite place to sleep:</label>
+            <input id="catPlace" name="Place to sleep" type="text" size="30" maxlength="50">
+        </p>
+        <p>What are your thoughts about owning cat as a pet?</p>
+        <p>
+            <textarea name="opinion" cols="50" rows="5" maxlength="200">Your opinion</textarea>
+        </p>
+        <p>
+            <label>How would you rate your cat's self preservation instinct:</label>
+            <label><input name="instinct" type="radio" value="grade5" checked>5</label>
+            <label><input name="instinct" type="radio" value="grade4">4</label>
+            <label><input name="instinct" type="radio" value="grade3">3</label>
+            <label><input name="instinct" type="radio" value="grade2">2</label>
+            <label><input name="instinct" type="radio" value="grade1">1</label>
+            <label><input name="instinct" type="radio" value="grade0">0</label>
+        </p>
+        <p>
+            <label>What toys do you use to play with your cat?:</label>
+            <label><input name="toys" type="checkbox" value="laser" checked>Laser</label>
+            <label><input name="toys" type="checkbox" value="ball">Ball</label>
+            <label><input name="toys" type="checkbox" value="scratchingPost">Scratching Post</label>
+            <label><input name="toys" type="checkbox" value="stuffedToys">Stuffed Toys</label>
+            <label><input name="toys" type="checkbox" value="plasticMouse">Platic mouse</label>
+        </p>
+        <p>
+            <label>What's your cat favourite food brand?
+            <select name="foodBrand">
+                <option value="smalls">Smalls human</option>
+                <option value="purina">Purina one</option>
+                <option value="sheba">Sheba perfect</option>
+                <option value="rachael">Rachael ray</option>
+                <option value="american">American Journey</option>
+                <option value="other">Other</option>
+                <option value="0">I prepare food for my cat</option>
+            </select>
+            </label>
+        </p>
+            
+            
+        
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </p>
+    </form>        
+    
+    
+    <footer>
+        &copy; Filip Stachowiak
+    </footer>
 
+</body>
 </html>
