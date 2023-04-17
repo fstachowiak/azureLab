@@ -5,74 +5,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="cats, form, owners">
-    <meta name="description" content ="The file contains form about cats which should be fulfilled by cats' owners. ">
-    <title>Questionaire</title>
+    <meta name="keywords" content="cats, pictures, article">
+    <meta name="description" content ="The file contains article about cats and some pictures of different breeds of cats. ">
+    <style>
+    aside {
+        width: 40%;
+        padding-left: 25px;
+        margin-left: 25px;
+        float: right;
+        font-style: italic;
+        background-color: lightgray;
+      }
+      
+      </style>
+    <title>Catsionary</title>
 </head>
 <body>
-    <h2>Form for cat owners</h2>
-    <p>Please fill the form</p>
-    <form id="firstForm" method="post" action="http://localhost:5500/SimpleForm.html">
-        <input type="hidden" name="securityCode" value="DE79W23">
-        <p>
-            <label for="catName">Your cat name:</label>
-            <input id="catName" name="Cat name" type="text" size="30" maxlength="50">
-        </p>
-        <p>
-            <label for="catBreed">Your cat breed:</label>
-            <input id="catBreed" name="Cat breed" type="text" size="30" maxlength="50">
-        </p>
-        <p>
-            <label for="catPlace">Your cat favourite place to sleep:</label>
-            <input id="catPlace" name="Place to sleep" type="text" size="30" maxlength="50">
-        </p>
-        <p>What are your thoughts about owning cat as a pet?</p>
-        <p>
-            <textarea name="opinion" cols="50" rows="5" maxlength="200">Your opinion</textarea>
-        </p>
-        <p>
-            <label>How would you rate your cat's self preservation instinct:</label>
-            <label><input name="instinct" type="radio" value="grade5" checked>5</label>
-            <label><input name="instinct" type="radio" value="grade4">4</label>
-            <label><input name="instinct" type="radio" value="grade3">3</label>
-            <label><input name="instinct" type="radio" value="grade2">2</label>
-            <label><input name="instinct" type="radio" value="grade1">1</label>
-            <label><input name="instinct" type="radio" value="grade0">0</label>
-        </p>
-        <p>
-            <label>What toys do you use to play with your cat?:</label>
-            <label><input name="toys" type="checkbox" value="laser" checked>Laser</label>
-            <label><input name="toys" type="checkbox" value="ball">Ball</label>
-            <label><input name="toys" type="checkbox" value="scratchingPost">Scratching Post</label>
-            <label><input name="toys" type="checkbox" value="stuffedToys">Stuffed Toys</label>
-            <label><input name="toys" type="checkbox" value="plasticMouse">Platic mouse</label>
-        </p>
-        <p>
-            <label>What's your cat favourite food brand?
-            <select name="foodBrand">
-                <option value="smalls">Smalls human</option>
-                <option value="purina">Purina one</option>
-                <option value="sheba">Sheba perfect</option>
-                <option value="rachael">Rachael ray</option>
-                <option value="american">American Journey</option>
-                <option value="other">Other</option>
-                <option value="0">I prepare food for my cat</option>
-            </select>
-            </label>
-        </p>
-            
-            
-        
-        <p>
-            <input type="submit" value="Submit">
-            <input type="reset" value="Clear">
-        </p>
-    </form>        
+    <main>
+    <!--Some facts about cats-->
+    <h1 id="Top">The Inner Life of Cats&trade;</h1>
+    <h2>If you have ever wondered why your cat behaves the way it does, wonder no more</h2>
+    <p>
+        <a href="#Bottom">Go to bottom</a>
+    </p>
+    <p>As anyone who has spent time with cats knows, our feline companions are mysterious—much more so than those other furry family members. Here <strong> John Bradshaw </strong>, author of Cat Sense (Basic Books, 2013), fields a selection of questions submitted by Scientific American editors and Twitter followers about the cat’s many quirks. Bradshaw is a visiting fellow at the University of Bristol School of Veterinary Sciences in England, where he studies the behavior and welfare of cats and dogs, as well as their interactions with people.</p>
+    <h3>Are cats less domesticated than dogs? Are they becoming more domesticated over time?</h3>
+    <p><em>Cats are far more similar to their wild ancestors than dogs are to wolves</em>, so dogs are in that sense the more domesticated of the two species. As they adapted to living alongside humans, cats became more sociable with one another and much more accepting of people, but there is no evidence that they have changed much more than that over the past few thousand years.</p>
+    <h3>Will cats, which require meat, eventually evolve to eat a broader array of foods as dogs do?</h3>
+    <p>Cats and dogs belong to a group of mammals known as <i>Carnivora</i>, and the wild ancestors of both species dined primarily on meat. Recent DNA analyses indicate that over the course of their evolution, <strong>dogs have acquired more copies of the so-called amylase gene</strong>, which makes an enzyme that helps to break down starch. Having more copies of this gene has allowed dogs to eat a more omnivorous diet. In contrast, the cat family, known as <i>Felidae</i>, lost the genes that encode several key enzymes—including those that manufacture vitamin A, prostaglandins and the amino acid taurine—early in its evolution. Whereas dogs (and humans) can synthesize these substances from plant-based precursors, cats have to obtain them from meat. To expand their diet, cats would have to evolve physiological traits that allow them to synthesize these and other key nutrients from plant foods. This capacity has not emerged during the <em>10 million years of felid evolution</em>, so it seems unlikely to arise spontaneously in our domestic cats.</p>
+    <h3>Why do cats purr?</h3>
+    <p>Cats purr because they have something to say, which roughly translated is <b>“please keep still and pay attention to me.”</b> Kittens purr to persuade their mothers to keep on nursing them, and pet cats purr when they want to be stroked. The vibrations emanating from the purr certainly have a calming effect on people. Yet sick cats will also purr as a cry for help. So purring <b>doesn’t</b> always mean “I’m happy.” Some researchers have claimed that the vibrations from purring might help heal bone damage in an injured cat.</p>
+    <h3>How do they purr?</h3>
+    <p>The purr is an unusual vocalization, made by <em>rattling the vocal cords together rather than vibrating them by pushing air past them</em>, which is how cats—and humans—generate all their other vocal sounds. That’s why cats can purr when they’re breathing in and breathing out. Most species of wildcats can purr, including the cheetah. The exceptions are the big cats—lion, tiger, jaguar and leopard—whose voice boxes are modified so that they can roar.</p>
+    <h3>Why do house cats have so many vocalizations compared with wildcats?</h3>
+    <p>House cats are much noisier than feral cats, although they have fewer vocalizations than some other species. The jungle cat from Asia, for example, has a couple more that are not in the house cat’s repertoire, namely the <b>“ow”</b> and the <b>“gurgle.”</b> The house cat’s characteristic sound, the meow, is hardly ever heard in feral cat colonies, except occasionally when mother cats are communicating with their kittens. Feral cats diligently monitor one another’s comings and goings, so they don’t need to announce their presence vocally. Cats that live with humans, however, learn that meowing is a good way of getting our attention: our pet felines often find that we have our noses buried in a book or a screen, so they meow to get us to acknowledge them. Some pets develop a “private language” of meows that only their owners understand, each signifying something different that the cat needs. Also, certain breeds are notoriously chatty, the Siamese in particular.</p>
+    <h3>Do cats think of their owners as parents? Siblings? Friends?</h3>
+    <p>By rubbing around our legs when they greet us, cats show that they regard us as friendly but at the same time slightly superior to them. When living in a family group, kittens rub on their mothers, females rub on males and smaller cats rub on bigger cats. The reverse <em>rarely occurs—an indicator of the small imbalance of power in each of these relationships.</em></p>
+    <h3>How can you get a cat to love you?</h3>
+    <p>Cats naturally feel affection for those who feed, look after and play with them, although they don’t always make that obvious. Trust can be harder to win because some <em>cats are just nervous.</em> One trick is to always allow the cat to approach you rather than forcing yourself on the cat when you feel like it. When the cat does approach, reward it with a few treats and let it leave as soon as it wants to. You should find that it comes to you a little sooner, and stays for a little longer, each time.</p>
+    <h3>Why do cats sometimes suddenly bite or scratch the person who is petting them?</h3>
+    <p>You have probably missed the warning signs that the cat has had enough. Some cats, even if they enjoy being petted, also tire of it very quickly. Flattened ears and a slight twitching of the tail <b>can signal</b> that they have had their fill. If you have such a cat, try breaking off from stroking it every few seconds and allow it to move away if it wants to.</p>
+
+
+    <h3>Cats domestication around the world</h3>
+    <details>
+        <summary>Middle East</summary>
+        Researchers recently discovered that, in the Mesopotamia region and Turkey, and on the Mediterranean island of Cyprus, cats were living with among people thousands of years before they existed in Egypt. In fact, evidence suggests that people domesticated cats in the Middle East more than 10,000 years ago, and cats were revered in many of the region’s traditions. Researchers consider the Middle East the place where people first domesticated cats. Additionally, the first evidence of the “blotched“ or “tabby“ coat pattern cat, which commonly appears in domesticated cats, appeared in Turkey during the 14th century. 
+    </details>
+    <details>
+        <summary>Africa</summary>
+        The ancient Egyptians began domesticating the African wildcat as early as 4,000 years ago. In ancient Egypt, people believed that cats were magical, divine and godlike. In fact, ancient Egyptians worshipped a feline goddess named Bastet, who was depicted as half-feline, half-woman. Throughout the artifacts from ancient Egypt, cats are a symbolic fixture, illustrating their value, popularity and companionship with humans. Even in death, people immortalized the cats of ancient Egypt as mummies. 
+    </details>
+    <details>
+        <summary>Asia</summary>
+        Around 3,000 B.C., the people of China began to domesticate the leopard cat and the western wildcat for pest control. During the Sung Dynasty (960 – 1279), people cherished cats as loyal pets. Artists depicted them in paintings and sculptures. The Chinese culture considered the cat as a symbol of good luck. 
+    </details>
+    <details>
+        <summary>Europe</summary>
+        During the Middle Ages, many people considered cats demonic and associated them with darkness and witchcraft. As a result, popes and high-ranking officials condemned cats, and the animals were often tortured and killed. In more modern times, especially the Age of Enlightenment in the 17th and 18th century, cats began to shed their negative reputation and regained popularity as a loyal pet. Today, cats are one of the most popular and cherished pets in Europe. A recent Boehringer Ingelheim and IPSOS joint study found that over 91 percent of cat owners say their cat has a positive effect on their lives. 
+    </details>
+    <details>
+        <summary>North and South America</summary>
+        Cats arrived in North and South America with European settlers. As the settlers began to cultivate the land, cats helped establish the unique human-animal bond through their natural ability to hunt, drive away rodents and serve as loyal companion pets. Today, the domestic cat is the most popular household pet in the U.S., with nearly 74 million cats living in homes.
+    </details>
+
+    <h3>Cheetah and Jaguar</h3>
+    <p>The fastest land mammal and one of the biggest cats in the world live in the grasslands, savannas and semi-arid area that have enough open space and plenty of prey. The species were mostly seen in Africa and Asia, however, right now both of them are endangered. The fully grown cheetah will weight around 75 and 145 pounds and can grow up to 4 feet in length and reaches 2 to 3 feet in height. Talking about the appearance, it can easily be recognized with the help of orange fur covered with black spots and two black lines called “black tears” and hence listed as one one of the best animal patterns in the world. The species is diurnal which is active during the day, however, most of the African animals hunt in the night. The average lifespan of Cheetah is 12 years in the wild.</p>
     
-    
+    <aside>
+        <p>Cats can be seen all over the world right from your neighbour’s pet to big cats including tigers, cheetah, jaguar, lion and many others. Apart from Lions that live in groups known as pride, all other big cats live solitary lives with the exception of mothers and cubs. Some of the big cats are too fast to chase preys and hunt them down</p>
+    </aside>
+    <p>Jaguar is the third-largest cat in the world and if we talk about speed it will stand at second with a speed of 80 kilometres per hour. The largest cat in America mostly seen in the rainforests, swamps, grasslands, scrub woodlands, forests. The species is endangered because of excessive hunting in need of their beautiful fur and sometimes they also attack at the livestock on the nearby farms. It can weight around 200-250 pounds and reach 5-7 feet in length. Talking about the appearance, it has tan or orange fur covered with black spots arranged in rosettes that are arranged in the shapes of roses. Jaguar is an excellent tree climber and marks its territory by scratching the bark. It lives around 12 to 15 years in the wild.</p>
+    <h3>The fastest wild cats in the world</h3>
+    <p>Cheetah's Speed <meter min="5" max="100" low="10" high="50" value="93"></meter> 93 km/h</p>
+    <p>Jaguar Speed <meter min="5" max="100" low="10" high="50" value="80"></meter> 80 km/h</p>
+    <p>Lion's Speed <meter min="5" max="100" low="10" high="50" value="80"></meter> 80 km/h</p>
+    <p>Tiger's Speed <meter min="5" max="100" low="10" high="50" value="64"></meter> 64 km/h</p>
+    <p>Leopard's Speed <meter min="5" max="100" low="10" high="50" value="58"></meter> 58 km/h</p>
+
+    </main>
+    <h4>Links:</h4>
+    <header>
+        <nav>
+            <p><a href="file:///C:/Users/filip/OneDrive/Pulpit/WebSystemsProgramming/WSPCodes/lab2/page2.html">Cat lists and tables</a></p>
+            <p><a href="file:///C:/Users/filip/OneDrive/Pulpit/WebSystemsProgramming/WSPCodes/lab2/page3.html">Cat form</a></p>
+            <p><a href="file:///C:/Users/filip/OneDrive/Pulpit/WebSystemsProgramming/WSPCodes/lab2/page4.html">Personal form</a></p>
+            <p><a href="https://www.scientificamerican.com/article/the-inner-life-of-cats/">SCIENTIFIC AMERICAN&reg;</a></p>
+            <p><a href="#Top">Go to top</a></p>
+            <p><a href="mailto:260475@student.pwr.edu.pl"> Write to me</a></p>
+        </nav>
+    </header>
     <footer>
         &copy; Filip Stachowiak
     </footer>
-
 </body>
 </html>
